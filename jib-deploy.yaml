@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jibtest-deployment
+  labels:
+    app: jibtest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jibtest
+  template:
+    metadata:
+      labels:
+        app: jibtest
+    spec:
+      containers:
+      - name: jibtest
+        image: fosong98/mamamamama
+        ports:
+        - containerPort: 8080
