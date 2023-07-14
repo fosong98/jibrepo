@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: jibtest
-        image: fosong98/jibtest:0.0.1
+        image: fosong98/jibtest:15
         ports:
         - containerPort: 8080
